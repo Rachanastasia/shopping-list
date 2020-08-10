@@ -11,13 +11,14 @@ function main() {
 
         let inputText = $(this).find('input').val();
 
-        $('li:first').before(`<li><span class="shopping-item">${inputText}
+        $('li').first('li').before(`<li><span class="shopping-item">${inputText}
         </span><div class="shopping-item-controls">
         <button class="shopping-item-toggle">
         <span class="button-label">check</span>
         </button><button class="shopping-item-delete">
         <span class="button-label">delete</span>
         </button></div></li>`);
+
     });
 
 
